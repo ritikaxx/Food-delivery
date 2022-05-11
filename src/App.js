@@ -2,11 +2,13 @@ import React from 'react'
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
 import CreateContainer from './components/CreateContainer';
+import { AnimatePresence } from "framer-motion";
 
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
+    <AnimatePresence>
     <>
     <div className="w-screen h-auto flex flex-col">
       <Header />
@@ -19,6 +21,7 @@ const App = () => {
       </Routes>
     </main>
 </>
+</AnimatePresence>
   )
 }
 
