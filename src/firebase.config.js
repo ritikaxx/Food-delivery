@@ -1,20 +1,20 @@
-import {getApp,getApps,initializeApp} from "firebase/app";
-import {getFirestore, GetFirestore} from "firebase/firestore";
-import {getStorage} from "firebase/storage";
+import { getApp, getApps, initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-apiKey: "AIzaSyAjETHwFUUM_dLoNEVVqzq9_u2pfn4hBNo",
-  authDomain: "food-delivery-d8519.firebaseapp.com",
-  databaseURL: "https://food-delivery-d8519-default-rtdb.firebaseio.com",
-  projectId: "food-delivery-d8519",
-  storageBucket: "food-delivery-d8519.appspot.com",
-  messagingSenderId: "738820476093",
-  appId: "1:738820476093:web:f75d69bc7e4b18aeaf3bd4"
+  apiKey: "AIzaSyD_bxGG0WgOKDejZvER2fTq2xZZjfUs8zs",
+  authDomain: "restaurantapp-c2ed6.firebaseapp.com",
+  databaseURL: "https://restaurantapp-c2ed6-default-rtdb.firebaseio.com",
+  projectId: "restaurantapp-c2ed6",
+  storageBucket: "restaurantapp-c2ed6.appspot.com",
+  messagingSenderId: "174416156605",
+  appId: "1:174416156605:web:2ec169ea4ef3e7bb25e4d4",
 };
 
-const app = getApps.Length >0 ? getApp() : initializeApp(firebaseConfig);
+const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
 
 const firestore = getFirestore(app);
 const storage = getStorage(app);
 
-export {app,firestore,storage};
+export { app, firestore, storage };
